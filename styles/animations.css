@@ -12,3 +12,108 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+   /* STATIC */
+
+.like-icon .main-body {
+   fill: var(--background-color, #fff); /* основное тело сердца */
+   transition: fill .3s linear;
+}
+
+.like-icon .core {
+   fill: var(--background-color, #fff); /* сердцевина */
+   transition: fill .3s linear 0.03s;
+}
+
+.like-icon .contour {
+   fill: var(--like-contur-col, #000); /* контур */
+   transition: fill .1s linear;
+}
+
+.like-icon .sparks { /* искры вокруг */
+   opacity: 0;
+}
+
+  /* ACTIVE */
+
+.like-icon:active .main-body {
+   fill: var(--like-sparks-col, #ff0000);
+   transition: fill .3s linear 0.05s;
+}
+
+.like-icon:active .core {
+   fill: var(--like-sparks-col, #ff0000);
+   transition: fill .3s linear;
+}
+
+ /* HOVER */
+
+.like-icon:hover .core {
+   fill: var(--like-contur-col, #000);
+   transition: fill .3s linear;
+}
+
+.like-icon:hover .main-body {
+   fill: var(--like-contur-col, #000);
+   transition: fill .3s linear 0.05s;
+}
+
+ /* CLICK */
+
+.like-icon.is-liked .core {
+   fill: var(--like-sparks-col, #ff0000);
+   transition: fill .3s linear;
+}
+
+.like-icon.is-liked .contour {
+   fill: var(--like-sparks-col, #ff0000);
+   transition: fill .3s linear 0.06s;
+}
+
+.like-icon.is-liked .main-body {
+   fill: var(--like-sparks-col, #ff0000);
+   transition: fill .3s linear 0.05s;
+}
+
+.like-icon .heart {
+   transform-origin: center;
+}
+
+ /* ANIMATION */
+
+.like-icon.is-liked .heart {
+   animation: heart .3s ease-in 0.1s 1 alternate;
+}
+
+.like-icon.is-liked .sparks {
+   animation: sparks .3s ease-in 0.3s 1 alternate;
+}
+
+@keyframes arrow {
+   0% {
+   transform: translate(0);
+   }
+   100% {
+   transform: translate(4px);
+   }
+}
+
+@keyframes sparks {
+   0% {
+   opacity: 0;
+   }
+   100% {
+   opacity: 1;
+   }
+}
+
+@keyframes heart {
+   0% {
+   transform: scale(1);
+   }
+   100% {
+   transform: scale(1.5);
+   }
+}
+
+
