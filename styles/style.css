@@ -351,13 +351,16 @@
 /* SUPPORTS */
 
 @supports (
-  (-webkit-text-stroke: 1px var(--background-color, #fff)) 
-) or (mix-blend-mode: hard-light)
-{
-  .card__html {
-    -webkit-text-stroke: 1px var(--background-color, #fff);
+  (
+      (text-stroke: 1px var(--themes-backgroud-color)) or
+        (-webkit-text-stroke: 1px var(--themes-backgroud-color))
+    )
+    and (mix-blend-mode: hard-light)
+) {
+  .card__img-label {
     text-shadow: none;
-    mix-blend-mode: hard-light;
+    -webkit-text-stroke: 1px var(--page-background-color, #ffffff);
+    text-stroke: 1px var(--page-background-color, #ffffff);
   }
 }
 
