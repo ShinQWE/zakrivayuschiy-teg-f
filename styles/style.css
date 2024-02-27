@@ -339,7 +339,7 @@
 }
 
 .dialog-icon {
-  width: 39px;
+  width: 91.44px;
   height: 39px;
 }
 
@@ -366,6 +366,11 @@
 .dialog {
   max-inline-size: 341px;
   padding: 30px 34px 30px 40px;
+}
+
+.dialog-icon {
+  width: 97.24px;
+  height: 39px;
 }
 
 .button__memory-icon {
