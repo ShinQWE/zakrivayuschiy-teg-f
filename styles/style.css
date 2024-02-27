@@ -42,7 +42,7 @@
   margin-inline: auto;
   border: 2px solid var(--text-color, #000);
   background: var(--background-color, #fff);
-  max-inline-size: 696px; 
+  max-inline-size: 696px;
 }
 
 .page__header {
@@ -142,7 +142,7 @@
   margin-inline: auto;
   border: 2px solid var(--text-color, #000);
   background: var(--background-color, #fff);
-  max-inline-size: 696px; 
+  max-inline-size: 696px;
 }
 
 .card__header {
@@ -350,7 +350,7 @@
 
 /* SUPPORTS */
 
-@supports ((-webkit-text-stroke: 1px var(--background-color, #fff))) and (mix-blend-mode: hard-light)
+@supports ( (-webkit-text-stroke: 1px var(--background-color, #fff)) ) and ( mix-blend-mode: hard-light )
 {
 .card__html {
   -webkit-text-stroke: 1px var(--background-color, #fff);
