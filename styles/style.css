@@ -352,15 +352,13 @@
 
 @supports (
   (
-      (text-stroke: 1px var(--themes-backgroud-color)) or
-        (-webkit-text-stroke: 1px var(--themes-backgroud-color))
+      (-webkit-text-stroke: 1px var(--themes-backgroud-color))
     )
     and (mix-blend-mode: hard-light)
 ) {
   .card__img-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--page-background-color, #ffffff);
-    text-stroke: 1px var(--page-background-color, #ffffff);
   }
 }
 
