@@ -350,7 +350,11 @@
 
 /* SUPPORTS */
 
-@supports ( (-webkit-text-stroke: 1px var(--background-color, #fff)) ) and ( mix-blend-mode: hard-light )
+@supports (
+  (-webkit-text-stroke: 1px var(--background-color, #fff))
+  ) and (
+    mix-blend-mode: hard-light
+    )
 {
 .card__html {
   -webkit-text-stroke: 1px var(--background-color, #fff);
