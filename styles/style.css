@@ -344,7 +344,6 @@
 .dialog[open] {
   display: grid;
   gap: 30px;
-  overflow: hidden;
 }
 
 .dialog::backdrop {
@@ -404,7 +403,6 @@
 }
 
 .dialog {
-  max-inline-size: 341px;
   padding: 30px 42px;
 }
 
